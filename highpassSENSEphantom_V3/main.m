@@ -61,9 +61,9 @@ figure(3); imshow(error_image1,[0,173]); colormap('gray'); axis square; colorbar
 % ================================
 
 
-reduced_kspace_data_hpSENSE=zeros(header.Nfe, header.Npe, header.num_coils); % 滤波前，未采样的部分补零
-highpassed_kspace_data=zeros(header.Nfe, header.Npe, header.num_coils); %滤波后
-highpassed_reduced_kspace_data=zeros(header.Nfe, header.Npe/FOV_reduction_factor, header.num_coils); %滤波后再采样
+reduced_kspace_data_hpSENSE=zeros(header.Nfe, header.Npe, header.num_coils); % 
+highpassed_kspace_data=zeros(header.Nfe, header.Npe, header.num_coils); %
+highpassed_reduced_kspace_data=zeros(header.Nfe, header.Npe/FOV_reduction_factor, header.num_coils); %
 highpassed_kspace_data1=zeros(header.Nfe, header.Npe, header.num_coils);
 highpassed_reduced_kspace_data2=zeros(header.Nfe, header.Npe/FOV_reduction_factor, header.num_coils); 
 coilimg1=zeros(size(full_kspace_data));
